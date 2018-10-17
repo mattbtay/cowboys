@@ -1,0 +1,48 @@
+@font-face {
+  font-family: 'cowboys';
+  src: url('/fonts/cowboys.woff') format('woff'),
+       url('/fonts/cowboys.otf') format('opentype');
+}
+
+body, #root {
+  margin: 0;
+  padding: 0;
+  height:100vh;
+  width:100%;
+  background:#fff;
+  font-family:cowboys, arial, sans-serif;
+}
+
+#root {
+  display:flex;
+  justify-content:center;
+}
+
+.text, .loading {
+  justify-content:center;
+  align-self:center;
+  text-align:center;
+  color:#041E42;
+  font-size:88px;
+}
+
+.logo {
+  width:100px;
+  height:100px;
+  animation:spin 3s infinite;
+  transform-origin:50% 50%;
+}
+
+.logo img {
+  width:100%;
+}
+
+@keyframes spin {
+  0% { transform:rotate(0deg) }
+  100% { transform:rotate(360deg) }
+}
+
+
+
+
+
