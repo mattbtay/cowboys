@@ -29,7 +29,7 @@ class App extends React.Component {
     } else if(this.state.response.lastGame === 'L') {
       answertext = <div className='text'>No</div>
     } else {
-      answertext = <div className='logo loading'><img src='/img/logo.svg' /></div>
+      answertext = <div className='logo loading'><img src='/img/logo.svg' alt='dallas cowboys logo' /></div>
     }
 
     return (
